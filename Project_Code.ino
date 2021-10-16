@@ -68,3 +68,69 @@ void loop(){
  moist_percent=map(moisture_value,0,1023,0,100);
  condition();
 }
+
+void condition(){
+if(digitalRead(rain_pin)==0)
+{
+if (distance_percent>65 &&moist_percent<85)
+{
+LCD_3();
+digitalWrite(tank_pump,LOW);
+digitalWrite(watering_pump,HIGH);
+ sms1();
+ sms2();
+delay(500);
+}
+else if (distance_percent<65 &&moist_percent>85)
+{
+LCD_2();
+digitalWrite(tank_pump,HIGH);
+digitalWrite(watering_pump,LOW);
+sms3();
+sms();
+delay(500);
+}
+else if (distance_percent>65 &&moist_percent>85)
+{
+
+LCD_4();
+digitalWrite(tank_pump,LOW);
+digitalWrite(watering_pump,LOW);
+
+sms1();
+sms();
+delay(500);
+
+}
+
+else if (distance_percent<65 &&moist_percent<85)
+{
+LCD_1();
+digitalWrite(tank_pump,HIGH);
+digitalWrite(watering_pump,HIGH);
+sms3();
+sms2();
+delay(500);
+
+}
+}
+if(digitalRead(rain_pin)==1)
+{
+  digitalWrite(watering_pump,LOW);
+  digitalWrite(tank_pump,LOW);
+  LCD_5();
+  sms4();
+  sms();
+  sms1();
+  delay(500); 
+  }
+if(digitalRead(motion_pin)==1)
+{
+    tone(buzzer_pin,1000,500);
+    sms6();
+    delay(500);
+  }
+delay(1000);
+temp_h();
+
+}
