@@ -134,3 +134,94 @@ delay(1000);
 temp_h();
 
 }
+
+void LCD_1()
+  {
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("TANK LEVEL=  ");
+  lcd.print(distance_percent);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("MOIST CONTENT= ");
+  lcd.print(moist_percent);
+  lcd.print("%");
+   lcd.setCursor(0,2);
+  lcd.print("W-PUMP STATUS  ");
+  lcd.print("  ON");
+  lcd.setCursor(0,3);
+  lcd.print("T-PUMP STATUS  ");
+  lcd.print("  ON");
+  }
+
+  void LCD_2(){
+  lcd.clear();
+  lcd.setCursor(0,0);
+   lcd.print("TANK LEVEL=  ");
+  lcd.print(distance_percent);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("MOIST CONTENT= ");
+  lcd.print(moist_percent);
+  lcd.print("%");
+   lcd.setCursor(0,2);
+  lcd.print("W-PUMP STATUS ");
+  lcd.print("  OFF");
+  lcd.setCursor(0,3);
+  lcd.print("T-PUMP STATUS ");
+  lcd.print("   ON");
+  }
+
+  void LCD_3(){
+  lcd.clear();
+  lcd.setCursor(0,0);
+   lcd.print("TANK LEVEL=  ");
+  lcd.print(distance_percent);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("MOIST CONTENT= ");
+  lcd.print(moist_percent);
+  lcd.print("%");
+   lcd.setCursor(0,2);
+  lcd.print("W-PUMP STATUS ");
+  lcd.print("  ON");
+  lcd.setCursor(0,3);
+  lcd.print("T-PUMP STATUS ");
+  lcd.print("  OFF");
+  }
+
+  void LCD_4(){
+  lcd.clear();
+  lcd.setCursor(0,0);
+   lcd.print("TANK LEVEL=  ");
+  lcd.print(distance_percent);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("MOIST CONTENT= ");
+  lcd.print(moist_percent);
+  lcd.print("%");
+   lcd.setCursor(0,2);
+  lcd.print("W-PUMP STATUS");
+  lcd.print("  OFF");
+  lcd.setCursor(0,3);
+  lcd.print("T-PUMP STATUS");
+  lcd.print("  OFF");
+  }
+
+  void LCD_5(){
+  lcd.clear();
+  lcd.setCursor(0,0);
+   lcd.print("TANK LEVEL=  ");
+  lcd.print(distance_percent);
+  lcd.print("%");
+  lcd.setCursor(0,1);
+  lcd.print("MOIST CONTENT= ");
+  lcd.print(moist_percent);
+  lcd.print("%");
+   lcd.setCursor(0,2);
+  lcd.print("W-PUMP STATUS ");
+  lcd.print("  OFF");
+  lcd.setCursor(0,3);
+  lcd.print("T-PUMP STATUS ");
+  lcd.print("  OFF");
+  }
