@@ -1,4 +1,4 @@
-****** SMART AGRICULTURE MONITORING WITH NOTIFICATION TO FARMER ****** 
+//****** SMART AGRICULTURE MONITORING AND IRRIGATION SYSTEM WITH NOTIFICATION TO FARMER ****** //
 /////////****SOURCE CODE*****/////////
 
 #include<LiquidCrystal.h>
@@ -313,4 +313,33 @@ void LCD_1()
   Serial.println((char)26);
   SIM900.println();
 
+  }
+  
+  void temp_h()
+  {
+     
+  //Read data and store it to variables hum and temp
+  hum = dht.readHumidity();
+  temp = dht.readTemperature();
+  //Print temp and humidity values to serial monitor
+  Serial.print("Humidity: ");
+  Serial.print(hum);
+  Serial.print(" %, Temp: ");
+  Serial.print(temp);
+  Serial.println(" Celsius");
+
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Temp: ");
+  lcd.print(temp);
+  lcd.print(" ");
+  lcd.print((char)223);
+  lcd.print("C");
+  lcd.setCursor(0,1);
+  lcd.print("Hum:  ");
+  lcd.print(hum);
+  lcd.print(" %");
+
+  delay(100);
+ 
   }
