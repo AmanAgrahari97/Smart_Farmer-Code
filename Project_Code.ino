@@ -225,3 +225,92 @@ void LCD_1()
   lcd.print("T-PUMP STATUS ");
   lcd.print("  OFF");
   }
+
+  void sms(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+  
+  SIM900.println("WATERING PUMP IS OFF"); // message to send
+  Serial.println("WATERING PUMP IS OFF");
+
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
+
+  void sms1(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+
+  SIM900.println("TANK PUMP IS OFF"); // message to send
+  Serial.println("TANK PUMP IS OFF");
+
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
+
+
+  void sms2(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+
+  SIM900.println("WATERING PUMP IS ON"); // message to send
+  Serial.println("WATERING PUMP IS ON");
+  
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
+
+  void sms3(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+
+  SIM900.println("TANK PUMP IS ON"); // message to send
+  Serial.println("TANK PUMP IS ON");
+
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
+  void sms4(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+  
+  SIM900.println("It's raining!"); // message to send
+  Serial.println("It's raining!");
+  
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
+  void sms5(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+  
+  SIM900.println("No rain!"); // message to send
+  Serial.println("No rain!");
+  
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
+  void sms6(){
+  SIM900.print("AT+CMGF=1\r"); 
+  SIM900.println("AT + CMGS = \"+91xxxxxxxxxx\"");// recipient's mobile number
+  
+  SIM900.println("Motion detected!"); // message to send
+  Serial.println("Motion detected!");
+  
+  SIM900.println((char)26); // End AT command with a ^Z, ASCII code 26
+  Serial.println((char)26);
+  SIM900.println();
+
+  }
