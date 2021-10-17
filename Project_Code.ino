@@ -330,13 +330,15 @@ void LCD_1()
 
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("Temp: ");
+  lcd.print(" Weather Updates ");
+  lcd.setCursor(0,1);
+  lcd.print(" Temp: ");
   lcd.print(temp);
   lcd.print(" ");
   lcd.print((char)223);
   lcd.print("C");
-  lcd.setCursor(0,1);
-  lcd.print("Hum:  ");
+  lcd.setCursor(0,2);
+  lcd.print("  Hum: ");
   lcd.print(hum);
   lcd.print(" %");
 
