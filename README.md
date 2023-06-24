@@ -1,2 +1,2 @@
 #SMART HOME FARMING
-[Project_Description.pptx](https://github.com/AmanAgrahari97/Smart_Farmer-Code/files/7397006/Project_Description.pptx)
+[Project_Description.pptx](https://docs.google.com/presentation/d/1z-gC-R44cSOr8TP-wNqLRxVM9Clb4xnF/edit?usp=sharing&ouid=112887857425014810367&rtpof=true&sd=true)
