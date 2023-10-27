@@ -1,2 +1,2 @@
 #SMART HOME FARMING
-[Project_Description](https://docs.google.com/presentation/d/1z-gC-R44cSOr8TP-wNqLRxVM9Clb4xnF/edit?usp=sharing&ouid=112887857425014810367&rtpof=true&sd=true)
+[Project_Description_Link](https://drive.google.com/file/d/1glx9D5Md9uXm6NM8FImhM9EKM1XKeRVc/view?usp=sharing)
